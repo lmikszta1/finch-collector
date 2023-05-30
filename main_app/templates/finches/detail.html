@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+{% block content %}
+
+<h1>Finch Details</h1>
+<div class="card">
+    <div class="card-content">
+        <span class="card-title">Name: {{ finch.name }}</span>
+        <p>Type: {{ finch.type }}</p>
+        <p>Color: {{ finch.color }}</p>
+        <a href="/finches" type="button" class="focus:outline-none text-white bg-purple-700 hover:bg-purple-800 focus:ring-4 focus:ring-purple-300 font-medium rounded-lg text-sm px-5 py-2.5 mb-2 dark:bg-purple-600 dark:hover:bg-purple-700 dark:focus:ring-purple-900">Back to finch list</a>
+    </div>
+</div>
+
+{% endblock %}
