@@ -1,10 +1,10 @@
 {% extends 'base.html' %}
 {% block content %}
 
-<h1>Finch List</h1>
+<h1 class="text-2xl flex justify-center items-center">Finch List</h1>
 
 {% for finch in finches %}
-    <div class="card">
+    <div class="flex justify-center items-center">
         <a href="{% url 'detail' finch.id %}" class="block max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow hover:bg-gray-100">
             <span class="mb-2 text-2xl font-bold tracking-tight text-gray-900">{{ finch.name }}</span>
             <p class="font-normal text-gray-700">Type: {{ finch.type }}</p>
